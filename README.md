@@ -53,3 +53,21 @@ function esSuficientementeGrande(elemento) {
 var filtrados = [12, 5, 8, 130, 44].filter(esSuficientementeGrande);
 // filtrados es [12, 130, 44]
 ```
+
+# Search
+
+Cuando se desea saber en qué casos un patrón se encuentra en una cadena de texto utiliza `search()`(si sólo deseas saber si existe, utiliza el método [`test()`](del prototipo de `RegExp`); para más información (pero de ejecución más lenta) utiliza [`match()`](similar al método [`exec()`])de las expresiones regulares).
+
+``
+
+```
+function testinput(re, str) {
+  var midstring;
+  if (str.search(re) != -1) {
+    midstring = ' contains ';
+  } else {
+    midstring = ' does not contain ';
+  }
+  console.log(str + midstring + re);
+}
+```
