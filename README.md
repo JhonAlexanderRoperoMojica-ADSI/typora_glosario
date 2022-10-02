@@ -71,3 +71,25 @@ function testinput(re, str) {
   console.log(str + midstring + re);
 }
 ```
+
+# Iterador
+
+En JavaScript, un **iterador** es un objeto que permite recorrer una colección y devolver un valor al terminar.
+
+Específicamente, un iterador es un objeto que implementa el [protocolo de iteración](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Iteration_protocols#the_iterator_protocol) a través del método `next()`, el cual devuelve un objeto con dos propiedades:
+
+``
+
+```
+function crearIterador(arreglo){
+    var siguienteIndice = 0;
+
+    return {
+       next: function(){
+           return siguienteIndice < arreglo.length ?
+               {value: arreglo[siguienteIndice++], done: false} :
+               {done: true};
+       }
+    }
+}
+```
