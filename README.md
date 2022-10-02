@@ -15,3 +15,25 @@ function logArrayElements(element, index, array) {
 // a[1] = 5
 // a[2] = 9
 ```
+
+# Map
+
+`map`llama a la función `callback`provista **una vez por elemento** de un array, en orden, y construye un nuevo array con los resultados. `callback`se invoca sólo para los índices del array que tienen valores asignados; no se invoca en los índices que han sido borrados oa los que no se ha asignado valor.
+
+``
+
+```
+var numbers = [1, 5, 10, 15];
+var doubles = numbers.map(function(x) {
+   return x * 2;
+});
+// doubles is now [2, 10, 20, 30]
+// numbers is still [1, 5, 10, 15]
+
+var numbers = [1, 4, 9];
+var roots = numbers.map(function(num) {
+    return Math.sqrt(num);
+});
+// roots is now [1, 2, 3]
+// numbers is still [1, 4, 9]
+```
