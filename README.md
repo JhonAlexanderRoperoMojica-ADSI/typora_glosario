@@ -37,3 +37,19 @@ var roots = numbers.map(function(num) {
 // roots is now [1, 2, 3]
 // numbers is still [1, 4, 9]
 ```
+
+
+
+# filter
+
+`filter()`llama a la función `callback` sobre cada elemento del arreglo, y construye un nuevo arreglo con todos los valores para los cuales `callback`devuelve un valor verdadero. `callback`se invoca sólo para índices del array que tienen un valor asignado. No se invoca sobre índices que hayan sido borrados oa los que no se les haya asignado algún valor. Los elementos del array que no cumplen la condición `callback` simplemente los salta, y no son incluidos en el nuevo array.
+
+``
+
+```
+function esSuficientementeGrande(elemento) {
+  return elemento >= 10;
+}
+var filtrados = [12, 5, 8, 130, 44].filter(esSuficientementeGrande);
+// filtrados es [12, 130, 44]
+```
