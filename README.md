@@ -93,3 +93,22 @@ function crearIterador(arreglo){
     }
 }
 ```
+
+# Ciclo
+
+inicialización - Sucede antes de la primera ejecución del bucle. Esta expresión es comúnmente utilizada para crear contadores. Las variables creadas tienen un alcance (scope) limitado al cuerpo del bucle. Una vez que el bucle ha terminado su ejecución las variables son destruidas.
+
+``
+
+```javascript
+var arr = [ 1, 2, 3 ];
+    for (var i = 0; i <= arr.length; i++) {
+       console.log(arr[i]);
+    }
+
+    resultado:
+    1
+    2
+    3
+    undefined
+```
