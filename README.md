@@ -86,3 +86,25 @@ En la expresión de función, la declaración se inicia con la palabra reservada
 const square = function(number) { return number * number }
 var x = square(4) // x obtiene el valor 16
 ```
+
+### 
+
+# Funciones Declarativas
+
+En las funciones declarativas, utilizamos la palabra reservada function al inicio para poder declarar la función
+
+`
+
+```
+var` `a = sum(1,2);
+```
+
+ 
+
+```
+function` `sum(a,b) {
+  ``return` `a + b;
+}
+```
+
+`
