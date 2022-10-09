@@ -75,3 +75,14 @@ function (a){
 // 3. Suprime los paréntesis de los argumentos
 a => a + 100;
 ```
+
+# Expresión de función
+
+En la expresión de función, la declaración se inicia con la palabra reservada var, donde se generará una variable que guardará una función anónima.
+
+``
+
+```
+const square = function(number) { return number * number }
+var x = square(4) // x obtiene el valor 16
+```
