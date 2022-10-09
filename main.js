@@ -1,11 +1,7 @@
-function myFunc(theObject) {
-    theObject.make = 'Toyota';
+function exampleFunction() {
+    var x = "declarada dentro de la función"; // x solo se puede utilizar en exampleFunction
+    console.log("funcion interna");
+    console.log(x);
 }
 
-[parcial]  = { make: 'Honda', model: 'Accord', year: 1998 };
-var x, y;
-
-x = mycar.make; // x obtiene el valor "Honda"
-
-myFunc(mycar);
-y = mycar.make;
+console.log(x);
