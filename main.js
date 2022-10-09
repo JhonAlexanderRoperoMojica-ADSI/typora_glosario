@@ -1,10 +1,8 @@
-function creaFunc() {
-    var nombre = "Mozilla";
-    function muestraNombre() {
-        alert(nombre);
-    }
-    return muestraNombre;
-}
+let str = "¡Si, Tu puedes hacerlo!";
 
-var miFunc = creaFunc();
-miFunc();
+console.log(str[0]); // ¡
+console.log(str[1]); // S
+console.log(str[2]); // i
+console.log(str[3]); // ,
+
+console.log(str[10]); // e
