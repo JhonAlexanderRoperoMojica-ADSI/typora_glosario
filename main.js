@@ -1,7 +1,10 @@
-function exampleFunction() {
-    var x = "declarada dentro de la función"; // x solo se puede utilizar en exampleFunction
-    console.log("funcion interna");
-    console.log(x);
+function creaFunc() {
+    var nombre = "Mozilla";
+    function muestraNombre() {
+        alert(nombre);
+    }
+    return muestraNombre;
 }
 
-console.log(x);
+var miFunc = creaFunc();
+miFunc();

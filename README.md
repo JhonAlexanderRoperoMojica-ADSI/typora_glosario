@@ -13,3 +13,22 @@ function exampleFunction() {
 
 console.log(x);
 ```
+
+# Clausula
+
+Si se ejecuta este código tendrá exactamente el mismo efecto que el ejemplo anterior: se muestra el texto "Mozilla" en un cuadro de alerta de Javascript.
+
+``
+
+```
+function creaFunc() {
+  var nombre = "Mozilla";
+  function muestraNombre() {
+    alert(nombre);
+  }
+  return muestraNombre;
+}
+
+var miFunc = creaFunc();
+miFunc();
+```
