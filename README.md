@@ -49,3 +49,29 @@ console.log(str[3]); // ,
 ...
 console.log(str[10]); // e
 ```
+
+# Funciones Flecha
+
+Una expresión de función flecha es una alternativa compacta a una `expresión de función`tradicional, pero es limitada y no se puede utilizar en todas las situaciones.
+
+``
+
+```
+// Función tradicional
+function (a){
+  return a + 100;
+}
+
+// Desglose de la función flecha
+
+// 1. Elimina la palabra "function" y coloca la flecha entre el argumento y el corchete de apertura.
+(a) => {
+  return a + 100;
+}
+
+// 2. Quita los corchetes del cuerpo y la palabra "return" — el return está implícito.
+(a) => a + 100;
+
+// 3. Suprime los paréntesis de los argumentos
+a => a + 100;
+```

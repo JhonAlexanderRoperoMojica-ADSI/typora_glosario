@@ -1,8 +1,17 @@
-let str = "¡Si, Tu puedes hacerlo!";
+// Función tradicional
+function (a) {
+    return a + 100;
+}
 
-console.log(str[0]); // ¡
-console.log(str[1]); // S
-console.log(str[2]); // i
-console.log(str[3]); // ,
+// Desglose de la función flecha
 
-console.log(str[10]); // e
+// 1. Elimina la palabra "function" y coloca la flecha entre el argumento y el corchete de apertura.
+(a) => {
+    return a + 100;
+}
+
+// 2. Quita los corchetes del cuerpo y la palabra "return" — el return está implícito.
+(a) => a + 100;
+
+// 3. Suprime los paréntesis de los argumentos
+a => a + 100;
